@@ -1,0 +1,22 @@
+package pk.ok.pasir_orlowski_kacper.controller;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Map;
+
+@RestController
+@RequestMapping("/api")
+public class InfoController {
+
+    @GetMapping("/info")
+    public Map<String, String> getAppInfo() {
+        return Map.of(
+                "appName", "Aplikacja Budżetowa",
+                "version", "1.0",
+                "message", "Witaj w aplikacji budżetowej stworzonej ze Spring Boot!"
+        );
+    }
+}

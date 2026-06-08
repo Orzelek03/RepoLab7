@@ -1,0 +1,6 @@
+$kind: collection
+name: Lab03
+variables:
+  baseUrl: ""
+  orzelToken: ""
+  kacperToken: ""

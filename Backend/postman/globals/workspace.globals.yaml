@@ -1,0 +1,11 @@
+name: Globals
+values:
+  - key: baseUrl
+    value: ''
+    enabled: true
+  - key: orzelToken
+    value: ''
+    enabled: true
+  - key: kacperToken
+    value: ''
+    enabled: true

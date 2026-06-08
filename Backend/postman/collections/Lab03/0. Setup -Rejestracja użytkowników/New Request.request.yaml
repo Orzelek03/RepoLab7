@@ -1,0 +1,7 @@
+$kind: http-request
+name: New Request
+url: "{{baseUrl}}/api/auth/login"
+method: GET
+headers:
+  Authorization: Bearer {{orzelToken}}
+order: 4418814463079080

@@ -1,0 +1,20 @@
+$kind: http-request
+name: Login_Orzel
+url: "{{baseUrl}}/api/auth/login"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"email\": \"orzel@example.com\",\r
+
+    \    \"password\": \"Haslo123\"\r
+
+    }"
+scripts:
+  - type: afterResponse
+    code: "var jsonData = pm.response.json();\r
+
+      pm.environment.set(\"orzelToken\", jsonData.token)"
+    language: text/javascript
+order: 1748250402121707

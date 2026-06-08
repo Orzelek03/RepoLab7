@@ -1,0 +1,5 @@
+$kind: http-request
+name: New Request
+url: http://localhost:8080/api/transactions/3
+method: DELETE
+order: 4000
